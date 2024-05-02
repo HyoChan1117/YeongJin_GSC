@@ -12,7 +12,7 @@ numbers_str = input("숫자들을 쉼표로 구분하여 입력하세요: ")
 # 문자열을 숫자 리스트로 변환한다.
 numbers = numbers_str.split(',')
 
-# 리스트의 개수
+# 숫자 리스트의 개수
 N = len(numbers)
 
 # 각 숫자를 정수로 변환한 후, 모든 숫자의 합을 계산한다.
@@ -42,3 +42,4 @@ else:
     print(f"입력된 모든 숫자들: {integer}")
     print(f"최종 총합: {sum1}")
 
+    print(f"총합이 100을 초과하지 않았습니다.\n입력된 모든 숫자들: {integer}\n최종 총합: {sum1}")
