@@ -10,23 +10,26 @@ list_tesla = ["Y", "X"]
 list_lexus = ["ES", "LS"]
 list_genesis = ["G80", "G90"]
 
-maker = ""
+list_model = [list_bmw, list_tesla, list_lexus, list_genesis]
 
-# 모델에 따른 메이커 선택
-for i in list_bmw:
-    if model == i:
-        maker = "BMW"
-if maker == "":
-    for i in list_tesla:
-        if model == i:
-            maker = "Tesla"
-if maker == "":        
-    for i in list_lexus:
-        if model == i:
-            maker = "lexus"
-if maker == "":       
-    for i in list_genesis:
-        if model == i:
-            maker = "Hyundai"
+# 회사별 자동차 목록을 가지고 온다. 반복 -> 4회 -> bmw, tesla, lexus, genesis
+# 세로 반복
+maker_name_list = ["bmw", "tesla", "lexus", "genesis"]
+index_count = 0
 
-print(maker)
+for maker_list in list_model:
+    # 회사별 자동차 모델을 가지고 온다. -> 반복 횟수? 회사별 모델 개수에 따라 다름
+    # 가로 반복
+    for model_in_list in maker_list:
+        if model == model_in_list:
+            maker = maker_name_list[index_count]
+            break
+        
+    if maker != "":
+        break
+    
+    index_count += 1
+        
+        
+# 다음주 월요일 오후 11시 40분까지
+# Lab1~10까지 풀어오기

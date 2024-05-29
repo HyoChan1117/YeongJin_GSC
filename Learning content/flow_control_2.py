@@ -13,20 +13,15 @@ list_genesis = ["G80", "G90"]
 maker = ""
 
 # 모델에 따른 메이커 선택
-for i in list_bmw:
-    if model == i:
-        maker = "BMW"
-if maker == "":
-    for i in list_tesla:
-        if model == i:
-            maker = "Tesla"
-if maker == "":        
-    for i in list_lexus:
-        if model == i:
-            maker = "lexus"
-if maker == "":       
-    for i in list_genesis:
-        if model == i:
-            maker = "Hyundai"
-
+if model in list_bmw:
+    maker = "bmw"
+elif model in list_tesla:
+    maker = "tesla"
+elif model in list_lexus:
+    maker = "lexus"
+elif model in list_genesis:
+    maker = "genesis"
+else:
+    maker = "Unknown model"
+    
 print(maker)
