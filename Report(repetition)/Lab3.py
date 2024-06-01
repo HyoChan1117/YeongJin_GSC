@@ -6,8 +6,10 @@ myString = "hello hyundai hoho"
 
 count = 0
 
+# 문장에서 "h"가 나오면 count에 1씩 추가한다.
 for i in myString:
     if i == "h":
         count += 1
-    
+
+# count가 끝났으면 출력한다.
 print("문자열 내 h 갯수 : ", count)
