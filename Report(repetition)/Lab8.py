@@ -12,10 +12,12 @@ random_int = random.randint(1, 100)
 while True:
     input_int = int(input("1부터 100 사이의 숫자를 맞춰보세요: "))
     
+    # 입력한 정수와 랜덤 정수가 같으면 반복문을 종료한다.
     if input_int == random_int:
         print("정답입니다!")
         break
-    
+    # 입력한 정수와 랜덤 정수가 같지 않으면 "더 큰 숫자 입니다.",
+    # "더 작은 숫자 입니다."를 출력하여 랜덤 정수를 유추할 수 있게 한다.
     elif input_int < random_int:
         print("더 큰 숫자입니다.")
     else:

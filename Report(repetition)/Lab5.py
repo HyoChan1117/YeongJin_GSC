@@ -7,11 +7,10 @@ score = [99, 29, 30, 40, 20, 60]
 sum = 0
 avg = 0
 
-# 반복문을 이용하여 학생들의 성적에 대한 총합을 구한다.
+# 반복문을 이용하여 학생들의 성적에 대한 총합, 평균을 구한다.
 for i in score:
     sum += i
+    stu_num = len(score)
+    avg = sum / stu_num
 
-# 위에서 구한 총합을 학생 수로 나눠 평균을 구한다.
-avg = sum / len(score)
-
-print("학생 수 : ", len(score), ", 총점 : ", sum, ", 평균 : ", avg)
+print("학생 수 : ", stu_num, ", 총점 : ", sum, ", 평균 : ", avg)
