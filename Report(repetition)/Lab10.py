@@ -32,9 +32,6 @@ if count == 10:
     # 입력한 정수와 랜덤 정수가 같지 않으면 해당 문구 출력
     if input_int != random_int:
         print(f"모든 기회를 사용하였습니다. 정답은 {random_int}입니다.")
-    # 입력한 정수와 랜덤 정수가 같으면 해당 문구 출력
-    elif input_int == random_int:
-        print("정답입니다!")
 
 # 경기 횟수와 상관없이 입력한 정수와 랜덤 정수가 같으면
 # 해당 문구 출력
