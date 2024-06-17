@@ -1,16 +1,27 @@
-# 사용자로부터 주민번호 13자리(앞 6자리, 뒤 7자리)를 입력 받아 주민번호의 유효성을
-# 검사하는 프로그램 작성
+#################
+input_number = input("주민번호를 입력하세요: ")
+check_number = [2,3,4,5,6,7,8,9,2,3,4,5]
 
-# 주민번호를 입력 받는다.(OOOOOO-OOOOOOO)
-text = list(input("주민번호를 입력하세요: "))
+# 유효성 검사
 
-# 입력 받은 문자열에서 '-' 빼기
-text.remove("-")
+sum = 0  # 변수를 선언을 먼저 해주자
+count = 0
+for num in input_number:
+    if num != "-" and count < 12:
+        # 현재 num이 "-" 아니고 주민번호의 마지막 자리가 아닐 때
+        sum += int(num) * check_number[count]
+        count += 1
+        
 
-# 문자열의 각 문자를 한 글자씩 가져와서 출력한다.
-for character in text:
-    print(character)
+# 주민번호 12자리를 체크 값과 곱한 후 더한다.
+# 주민번호 12자리 : 0번째 index -> 11번째 index
 
-check = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
-for mul_result in check:
-    
+ 
+# 체크값을 계산하다 : (11 - (sum % 11)) % 10
+check_value = (11 - (sum % 11)) % 10
+
+# 판별 결과 값을 출력한다.
+if check_value == int(input_number[-1]):
+    print("유효한 주민번호입니다.")
+else:
+    print("유효하지 않은 주민번호")
