@@ -18,7 +18,7 @@ while True:
     # 사용자로부터 정수 3개 입력
     input_values = input()
     
-    input_list = [int(value) for value in input_values.split()]
+    input_list = [ int(value) for value in input_values.split() ]
 
     # strike, ball 판별
     for i in range(3):
