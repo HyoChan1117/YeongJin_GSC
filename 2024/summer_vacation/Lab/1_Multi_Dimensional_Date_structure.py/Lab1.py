@@ -28,20 +28,20 @@ while True:
               
 # 입력 받은 Start, End, N을 바탕으로 중복되지 않은 N개의 난수를 생성한다.
 # 중복되지 않은 N개의 난수를 저장하기 위한 리스트
-list_num = []
+bingo_board = []
 
 count = 0
 while True:
     rand_num = random.randint(input_start, input_end)
     for index in range(count):
-        if list_num[index] == rand_num:
+        if bingo_board[index] == rand_num:
             break
     else:
-        list_num.append(rand_num)
+        bingo_board.append(rand_num)
         count += 1
         
     if input_num == count:
         print("생성된 난수 리스트:")
-        print(list_num)
+        print(bingo_board)
         break
         
