@@ -39,9 +39,7 @@ while True:
     else:
         list_num.append(rand_num)
         count += 1
-        
-    if input_num == count:
-        print("생성된 난수 리스트:")
-        print(list_num)
+
+    if count == input_num:
+        print(f"생성된 난수 리스트: {list_num}")
         break
-        
