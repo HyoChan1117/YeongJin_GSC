@@ -53,7 +53,9 @@ trial_count = 1
 bingo = 0
 while trial_count <= 38:
     if bingo == 2:
+        print("빙고! 게임을 종료합니다.")
         break
+    
     rand_int = random.randint(1, 36)
     enter = input(f"Enter 키를 누르세요. (현재 시도 횟수: {trial_count})")
     for index in range(bingo_num * bingo_num):
@@ -67,31 +69,33 @@ while trial_count <= 38:
         
     # 빙고 검사
     # 가로 확인 알고리즘
-    for row in range(bingo_num):
-        for col in range(bingo_num):
-            if bingo_board[col + (row * bingo_num)] != "*":
-                break
-            else:
-                bingo += 1
+    # for row in range(bingo_num):
+    #     for col in range(bingo_num):
+    #         if bingo_board[col + (row * bingo_num)] != "*":
+    #             break
+    #         else:
+    #             bingo += 1
 
-    # 세로 확인 알고리즘
-    for col in range(bingo_num):
-        for row in range(bingo_num):
-            if bingo_board[col + (row * bingo_num)] != "*":
-                break
-            else:
-                bingo += 1
+    # # 세로 확인 알고리즘
+    # for col in range(bingo_num):
+    #     for row in range(bingo_num):
+    #         if bingo_board[col + (row * bingo_num)] != "*":
+    #             break
+    #         else:
+    #             bingo += 1
 
-    # 대각선 : 왼쪽 -> 오른쪽 \
-    for row in range(bingo_num):
-        if bingo_board[row + (row * bingo_num)] != "*":
-            break
-        else:
-            bingo += 1
+    # # 대각선 : 왼쪽 -> 오른쪽 \
+    # for row in range(bingo_num):
+    #     if bingo_board[row + (row + bingo_num)] != "*":
+    #         break
+    #     else:
+    #         bingo += 1
         
-    # 대각선 : 오른쪽 -> 왼쪽 /
-    for row in range(bingo_num):
-        if bingo_board[row + (bingo_num - 1)] != "*":
-            break
-        else:
-            bingo += 1
+    # # 대각선 : 오른쪽 -> 왼쪽 /
+    # for row in range(bingo_num):
+    #     if bingo_board[(row + 1) * (bingo_num - 1)] != "*":
+    #         break
+    #     else:
+    #         bingo += 1
+    
+    trial_count += 1
