@@ -12,6 +12,8 @@ while running:
     # 이벤트 큐에서 이벤트를 가져옴
     # 이벤트가 종료될 때까지 
     for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
         # 이벤트 출력
         print(event)
         
