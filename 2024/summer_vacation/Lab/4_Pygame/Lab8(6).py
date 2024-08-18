@@ -1,127 +1,70 @@
 import pygame
-import random
+import sys
 
-# 화면 사이즈
+pygame.init()
+
+# 화면 크기 설정
 screen_width = 800
 screen_height = 600
-
-# 장애물 사이즈
-obs_width = 120
-obs_height = 100
-
-# 장애물 개수
-obs_num = 5
-
-# 아이템 사이즈
-item_width = 20
-item_height = 20
-
-# 아이템 개수
-item_num = 10
-
-# 움직이는 사각형 사이즈
-moving_rect_width = 30
-moving_rect_height = 30
-
-# 스피드
-speed = 300
-
-# 화면 생성
 screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Moving Rectangle Shooting")
+
+# 색상 정의
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+
+# 사각형 초기 위치 및 크기
+rect_width = 50
+rect_height = 50
+rect_x = screen_width // 2
+rect_y = screen_height // 2
+rect_speed = 5
+
+# 총알 리스트
+bullets = []
+
+# 총알 속도
+bullet_speed = 7
+
+# 게임 루프
 clock = pygame.time.Clock()
 
-# 장애물 랜덤하게 생성
-obs_list = []
-for _ in range(obs_num):
-    while True:
-        rect_x = random.randint(0, screen_width - obs_width)
-        rect_y = random.randint(0, screen_height - obs_height)
-        rect = pygame.Rect(rect_x, rect_y, obs_width, obs_height)
-        
-        if rect.collidelist(obs_list) == -1:
-            obs_list.append(rect)
-            break
-        
-# 아이템 랜덤하게 생성
-item_list = []
-for _ in range(item_num):
-    while True:
-        rect_x = random.randint(0, screen_width - item_width)
-        rect_y = random.randint(0, screen_height - item_height)
-        rect = pygame.Rect(rect_x, rect_y, item_width, item_height)
-        
-        if rect.collidelist(obs_list) == -1 and rect.collidelist(item_list) == -1:
-            item_list.append(rect)
-            break
-        
-# 움직이는 사각형 랜덤하게 생성
 while True:
-    rect_x = random.randint(0, screen_width - moving_rect_width)
-    rect_y = random.randint(0, screen_height - moving_rect_height)
-    moving_rect = pygame.Rect(rect_x, rect_y, moving_rect_width, moving_rect_height)
-    
-    if moving_rect.collidelist(obs_list) == -1 and moving_rect.collidelist(item_list) == -1:
-        break
-
-
-running = True
-while running:
-    # --> 이벤트 생성
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running = False
-            
-    # Delta time 설정
-    dt = clock.tick(120) / 1000
+            pygame.quit()
+            sys.exit()
     
-    # 움직이는 사각형의 이전 좌표 저장
-    prev_pos = moving_rect.topleft
+    # 키 입력 받기
+    keys = pygame.key.get_pressed()
     
-    # key 설정
-    key = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        rect_x -= rect_speed
+    if keys[pygame.K_RIGHT]:
+        rect_x += rect_speed
+    if keys[pygame.K_UP]:
+        rect_y -= rect_speed
+    if keys[pygame.K_DOWN]:
+        rect_y += rect_speed
     
-    if key[pygame.K_LEFT]:
-        moving_rect.x -= speed * dt
-    if key[pygame.K_RIGHT]:
-        moving_rect.x += speed * dt
-    if key[pygame.K_UP]:
-        moving_rect.y -= speed * dt
-    if key[pygame.K_DOWN]:
-        moving_rect.y += speed * dt
-        
-    # 움직이는 사각형 화면 경계 설정
-    moving_rect.x = max(0, min(moving_rect.x, screen_width - moving_rect_width))
-    moving_rect.y = max(0, min(moving_rect.y, screen_height - moving_rect_height))
-    
-    # 움직이는 사각형이 장애물에 충돌하지 않게 설정
-    if moving_rect.collidelist(obs_list) != -1:
-        moving_rect.topleft = prev_pos
-        
-    # 움직이는 사각형이 아이템에 충돌하면 아이템이 사라지게 설정
-    col_index = moving_rect.collidelist(item_list)
-    if col_index != -1:
-        del item_list[col_index]
-        
-    # 아이템이 모두 사라지면 게임 종료
-    if len(item_list) == 0:
-        running = False
-            
+    # 스페이스바를 눌러 총알 발사
+    if keys[pygame.K_SPACE]:
+        bullet_rect = pygame.Rect(rect_x + rect_width // 2 - 5, rect_y, 10, 20)
+        bullets.append(bullet_rect)
+
+    # 총알 움직임
+    for bullet in bullets:
+        bullet.y -= bullet_speed
+        if bullet.y < 0:
+            bullets.remove(bullet)
+
     # 화면 그리기
-    screen.fill((255, 255, 255))
-    
-    # 장애물 그리기
-    for rect in obs_list:
-        pygame.draw.rect(screen, (0, 0, 255), rect)
-        
-    # 아이템 그리기
-    for rect in item_list:
-        pygame.draw.rect(screen, (255, 255, 0), rect)
-        
-    # 움직이는 사각형 그리기
-    pygame.draw.rect(screen, (255, 0, 0), moving_rect)
-    
-    # 메모리에 그려진 그림 한 번에 출력
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, BLUE, (rect_x, rect_y, rect_width, rect_height))
+
+    for bullet in bullets:
+        pygame.draw.rect(screen, RED, bullet)
+
     pygame.display.flip()
-    
-# 프로그램 종료
-pygame.quit()
+    clock.tick(60)
