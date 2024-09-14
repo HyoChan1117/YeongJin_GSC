@@ -1,9 +1,9 @@
-package test;
+package LearningContents;
 
 public class test {
     public static void main(String[] args) {
 
-        float bar = 1 / 2;
+        float bar = 1.0f / 2.0f;
         System.out.println(bar);
 
     }

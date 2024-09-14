@@ -1,4 +1,4 @@
-package test;
+package LearningContents;
 
 public class VariableExample {
     public static void main(String[] args) {

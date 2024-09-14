@@ -1,4 +1,4 @@
-package test;
+package LearningContents;
 
 public class ConstantExample {
     public static void main(String[] args) {

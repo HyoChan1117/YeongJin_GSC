@@ -1,4 +1,4 @@
-package test;
+package LearningContents;
 
 public class CharacterString {
     public static void main(String[] args) {
