@@ -1,6 +1,6 @@
 package LearningContents;
 
-public class test1 {
+public class ReferenceCompare {
     public static void main(String[] args) {
 
         String str1 = new String("Hello");

@@ -1,6 +1,6 @@
 package LearningContents;
 
-public class test {
+public class PrePostOperator1 {
     public static void main(String[] args) {
 
         int bar = 2;
