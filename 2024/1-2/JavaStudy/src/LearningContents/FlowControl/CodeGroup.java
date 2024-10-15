@@ -33,7 +33,5 @@ public class CodeGroup {
             System.out.println(foo);
         }
 
-        System.out.println(foo);
-
     }
 }
