@@ -5,21 +5,23 @@ class PermissionManager {
     static final int READ = 0;   // 읽기 권한 비트 위치
     static final int WRITE = 1;  // 쓰기 권한 비트 위치
     static final int EDIT= 2;    // 수정 권한 비트 위치
-    static final int DELETE = 3; //
+    static final int DELETE = 3; // 삭제 권한 비트 위치
 
     private byte permissions = 0;  // 초기 권한 설정은 모두 비활성화 (0)
 
     // 권한 설정 메서드
     void setPermissions(int permission, boolean enable) {
+        // 마스크 변수 설정
         int mask = 1 << permission;
+
         // enable이 true인 경우:
         if (enable) {
-            // - permission 위치에 있는 특정 비트를 1로 설정 (| 연산과 << 연산 사용)
+            // - permission 위치에 있는 비트를 1로 설정 (| 연산과 << 연산 사용)
             permissions |= mask;
         }
         // enable이 false인 경우:
         else {
-            // - permission 위치에 있는 특정 비트를 0으로 설정(& 연산과 ~ 연산 사용)
+            // - permission 위치에 있는 비트를 0으로 설정(& 연산과 ~ 연산 사용)
             permissions &= ~mask;
         }
     }
