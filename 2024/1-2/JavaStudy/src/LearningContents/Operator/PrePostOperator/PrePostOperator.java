@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.Operator.PrePostOperator;
 
 public class PrePostOperator {
     public static void main(String[] args) {

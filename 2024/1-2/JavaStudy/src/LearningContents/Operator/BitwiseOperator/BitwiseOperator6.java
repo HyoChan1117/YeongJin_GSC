@@ -1,4 +1,4 @@
-package LearningContents.BitwiseOperator;
+package LearningContents.Operator.BitwiseOperator;
 
 public class BitwiseOperator6 {
 

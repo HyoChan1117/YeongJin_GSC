@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.CommentVariableConstant;
 
 public class DatatypeCalculate {
     public static void main(String[] args) {

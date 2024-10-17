@@ -1,8 +1,8 @@
-package LearningContents;
+package LearningContents.Operator;
 
 import java.util.Scanner;
 
-public class Operator {
+public class RelationalOperator {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

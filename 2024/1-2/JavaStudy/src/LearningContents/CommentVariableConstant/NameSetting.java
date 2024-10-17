@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.CommentVariableConstant;
 
 import java.util.Scanner;
 

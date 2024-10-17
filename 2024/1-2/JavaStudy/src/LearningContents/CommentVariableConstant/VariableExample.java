@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.CommentVariableConstant;
 
 public class VariableExample {
     public static void main(String[] args) {

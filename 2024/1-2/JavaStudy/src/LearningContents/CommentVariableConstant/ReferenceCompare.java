@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.CommentVariableConstant;
 
 public class ReferenceCompare {
     public static void main(String[] args) {

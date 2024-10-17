@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.Operator.BitwiseOperator;
 
 public class TwosComplement {
     public static void main(String[] args) {
