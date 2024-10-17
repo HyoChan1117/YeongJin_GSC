@@ -1,6 +1,6 @@
 package LearningContents.Operator;
 
-public class Operator1 {
+public class LogicalOperator {
     public static void main(String[] args) {
 
         boolean isOpened = false;
