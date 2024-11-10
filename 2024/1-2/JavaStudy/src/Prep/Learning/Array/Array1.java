@@ -1,8 +1,8 @@
-package Prep;
+package Prep.Learning.Array;
 
 import java.util.Scanner;
 
-public class test1 {
+public class Array1 {
     public static void main(String[] args) {
         // 키보드로부터 정수 N을 입력 받아,
         // N개의 int형 원소를 가지는 1차원 배열을 작성하시오.

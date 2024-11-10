@@ -1,4 +1,4 @@
-package LearningContents;
+package LearningContents.FlowControl;
 
 public class FlowControlLabel {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package Prep;
+package Prep.Learning.Array;
 
 import java.util.Scanner;
 
-public class test {
+public class Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 키보드로부터 정수 N을 입력 받아,

@@ -1,6 +1,6 @@
-package Prep;
+package LearningContents.FlowControl.Random;
 
-public class MathRandom {
+public class MathRandom1 {
     public static void main(String[] args) {
 
         // Math.random() -> 0.0 <= rand value < 1.0

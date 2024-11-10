@@ -1,8 +1,8 @@
-package Prep;
+package Prep.Learning.Array;
 
 import java.util.Scanner;
 
-public class test3 {
+public class Array2 {
     public static void main(String[] args) {
 
         // 키보드로부터 정수 N을 입력 받아 N개의 int 원소를 가지는 1차원 배열을 생성하라.

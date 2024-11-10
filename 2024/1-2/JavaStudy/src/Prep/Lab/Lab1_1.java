@@ -1,8 +1,8 @@
-package Prep;
+package Prep.Lab;
 
 import java.util.Scanner;
 
-public class Prep1Lab1 {
+public class Lab1_1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

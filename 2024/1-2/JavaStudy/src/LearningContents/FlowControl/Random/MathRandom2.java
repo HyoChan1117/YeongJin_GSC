@@ -1,8 +1,8 @@
-package Prep;
+package LearningContents.FlowControl.Random;
 
 import java.util.Scanner;
 
-public class MathRandom1 {
+public class MathRandom2 {
     public static void main(String[] args) {
 
         // 사용자로부터 배열 크기 N을 입력받아,
