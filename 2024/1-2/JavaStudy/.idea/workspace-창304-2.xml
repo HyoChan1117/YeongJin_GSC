@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a6fe1a9-b0c3-40a1-8f93-3b4d760a3328" name="변경" comment="24년 10월 29일 프로그래밍 강의">
+      <change afterPath="$PROJECT_DIR$/src/Lab/FlowControl/Lab2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab/FlowControl/Lab3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningContents/FlowControl/Loop/SwitchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningContents/FlowControl/Loop/SwitchExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningContents/FlowControl/Loop/SwitchExample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LearningContents/FlowControl/Loop/SwitchExample3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prep/MathRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prep/MathRandom1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Prep/test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab/FlowControl/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab/FlowControl/Lab1.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HCKim1117&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HCKim1117/YeongJin_GSC&quot;,
+    &quot;accountId&quot;: &quot;10cc1f5c-fd69-415f-902c-a043626c0660&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2nY6PsRkHf2HanAuYS8HlAqOw2N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/OneDrive - yjc.ac.kr/바탕 화면/학습자료/YeongJin_GSC/2024/1-2/JavaStudy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.AlphabetPrint.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.BitwiseOperator1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.CodeGroup.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.FlowControlExample.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.For.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.For1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.For2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.For4.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ForExample1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ForExample2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ForExample3.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ForExample4.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Lab1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Lab2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Operator.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Prep3Lab1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Prep4Lab1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Switch.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Switch1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Switch2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Switch3.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.SwitchExample.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.SwitchExample1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.SwitchExample2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.SwitchExample3.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.TwosComplement.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.test.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.test1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.test2.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.test3.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.test4.executor&quot;: &quot;Run&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Prep" />
+      <recent name="LearningContents.FlowControl.Loop" />
+      <recent name="Lab.FlowControl" />
+      <recent name="LearningContents.FlowControl.Selection" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MathRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prep.MathRandom" />
+      <module name="JavaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Prep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.MathRandom" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="8a6fe1a9-b0c3-40a1-8f93-3b4d760a3328" name="변경" comment="" />
+      <created>1729137640874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729137640874</updated>
+      <workItem from="1729137641948" duration="34000" />
+      <workItem from="1729137731156" duration="1182000" />
+      <workItem from="1729138972231" duration="11550000" />
+      <workItem from="1729559380668" duration="9017000" />
+      <workItem from="1729687072168" duration="529000" />
+      <workItem from="1729742415923" duration="8606000" />
+      <workItem from="1730164929536" duration="599000" />
+      <workItem from="1730270134900" duration="838000" />
+      <workItem from="1730290035491" duration="66000" />
+      <workItem from="1730290133926" duration="31000" />
+      <workItem from="1730290198550" duration="1563000" />
+      <workItem from="1730347674782" duration="1627000" />
+      <workItem from="1730350654174" duration="9377000" />
+      <workItem from="1730441011365" duration="6248000" />
+      <workItem from="1731043498647" duration="2000" />
+    </task>
+    <task id="LOCAL-00001" summary="24년 10월 17일 파일 정리">
+      <option name="closed" value="true" />
+      <created>1729138652737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729138652737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="24년 10월 17일 파일 정리">
+      <option name="closed" value="true" />
+      <created>1729138704379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729138704379</updated>
+    </task>
+    <task id="LOCAL-00003" summary="24년 10월 17일 프로그래밍 강의">
+      <option name="closed" value="true" />
+      <created>1729159875404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729159875404</updated>
+    </task>
+    <task id="LOCAL-00004" summary="24년 10월 30일 프로그래밍 특강">
+      <option name="closed" value="true" />
+      <created>1730292660019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730292660019</updated>
+    </task>
+    <task id="LOCAL-00005" summary="24년 10월 29일 프로그래밍 강의">
+      <option name="closed" value="true" />
+      <created>1730292679914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730292679914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="24년 10월 17일 파일 정리" />
+    <MESSAGE value="24년 10월 17일 프로그래밍 강의" />
+    <MESSAGE value="24년 10월 30일 프로그래밍 특강" />
+    <MESSAGE value="24년 10월 29일 프로그래밍 강의" />
+    <option name="LAST_COMMIT_MESSAGE" value="24년 10월 29일 프로그래밍 강의" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

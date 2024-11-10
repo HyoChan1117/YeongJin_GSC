@@ -103,7 +103,6 @@ public class Game2 {
                 // 연속 승리 했을 경우
                 if (winwin >= 2){
                     count += 3;
-                    winwin = 0;
                 }
                 // 1번 승리 했을 경우
                 else {
@@ -115,7 +114,7 @@ public class Game2 {
             else {
                 System.out.println("컴퓨터: " + cpuInput[randCpu] + " 패배입니다.");
                 count--;
-                winwin = 0; // 무승부 시 초기화
+                winwin = 0; // 패배 시 초기화
             }
 
         }
