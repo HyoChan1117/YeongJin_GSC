@@ -7,7 +7,7 @@ public class Game2 {
 
         // 가위, 바위, 보 게임 만들기
 
-        // 키보드로부타 Scissors, Rock, Paper를 입력받아,
+        // 키보드로부터 Scissors, Rock, Paper를 입력받아,
         // 아래와 같이 결과를 출력하라
         // 예 1) 승리   - 사용자 : Scissors, 컴퓨터 : Paper
         // 예 2) 패배   - 사용자 : Scissors, 컴퓨터 : Rock
