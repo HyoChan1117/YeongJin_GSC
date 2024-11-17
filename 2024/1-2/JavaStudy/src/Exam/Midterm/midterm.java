@@ -2,7 +2,7 @@ package Exam.Midterm;
 
 import java.util.Scanner;
 
-public class exam1 {
+public class midterm {
     public static void main(String[] args) {
 
         // 슬롯머신 게임 구현하기

@@ -1,6 +1,6 @@
 package Exam.Midterm;
 
-public class test1 {
+public class comboCalculate {
     public static void main(String[] args) {
 
         char slotItems[] = { '-', '-', '*'};
