@@ -11,21 +11,6 @@ public class starMatrix1 {
                     System.out.print(" ");
                 } else {
                     System.out.print("*");
-//                if (isBidirectional== false) {
-//                    if (i == j) {
-//                        System.out.print(' ');
-//                    }
-//                    else {
-//                        System.out.print('*');
-//                    }
-//                }
-//                else {
-//                    if (i == j || i + j == argCol - 1) {
-//                        System.out.print(' ');
-//                    }
-//                    else {
-//                        System.out.print('*');
-//                    }
                 }
 
             }
