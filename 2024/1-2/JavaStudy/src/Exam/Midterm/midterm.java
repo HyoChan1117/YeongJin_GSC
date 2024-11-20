@@ -10,10 +10,11 @@ public class midterm {
         Scanner sc = new Scanner(System.in);
 
         // 변수 초기화
-        int slotnum = 3; // 슬롯머신 개수 변수
+        final int slotnum = 3; // 슬롯머신 개수 변수
+
         int count = 1; // 게임 횟수 카운트 변수
         int score = 0; // 게임 점수 카운트 변수
-        int slotItem = 0; // 연속된 연산자 저장 변수
+        char slotItem = 0; // 연속된 연산자 저장 변수
 
         // 연산자 배열 생성
         // 세 가지 연산자(+, -, *)를 포함하는 char type 1차원 배열 생성
