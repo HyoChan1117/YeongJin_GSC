@@ -58,7 +58,6 @@ public class Lab1 {
 
         boolean isRunning = true; // 게임 플래그 변수
 
-
         // 입력된 학생 성적을 저장하는 배열 생성
         float[][] stuTable = new float[NUM_OF_STUDENTS][NUM_OF_FIELDS];
 
