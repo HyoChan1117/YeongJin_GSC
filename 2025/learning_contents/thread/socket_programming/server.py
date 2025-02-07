@@ -28,6 +28,7 @@ def run_server():
     server_socket.bind((host, port))
     
     # 클라이언트의 접속을 기다림 (최대 5개 대기 가능) -> Queue의 개수가 5개
+    # listen을 하면 IP주소와 포트주소가 이미 넘어옴옴
     server_socket.listen(5)
     
     print(f"서버가 {host}:{port}에서 대기 중입니다...")
