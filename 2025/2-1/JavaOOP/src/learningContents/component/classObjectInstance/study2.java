@@ -1,3 +1,5 @@
+package learningContents.component.classObjectInstance;
+
 //1. Class 정의 -> 틀 정의
 // 틀을 정의하는 이유 : 객체를 찍어내기 위해
 // Class의 이름을 정의할 때 첫 글자는 대문자로 함
@@ -13,7 +15,7 @@ class Car1{
     }
 }
 
-public class test {
+public class study2 {
     public static void main(String[] args) {
         // new;
         // 복습
