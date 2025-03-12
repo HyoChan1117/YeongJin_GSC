@@ -1,4 +1,4 @@
-package learningContents.component.classObjectInstance;
+package learningContents.component.constructor;
 
 class Bar {
     // 멤버변수 -> 클래스 내 선언 된 변수
@@ -18,7 +18,7 @@ class Bar {
     }
 }
 
-public class study5 {
+public class parameterConstructor1 {
     public static void main(String[] args) {
         Bar b1 = new Bar("Richard");
         b1.printInfo();
