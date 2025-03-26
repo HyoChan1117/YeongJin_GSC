@@ -1,6 +1,8 @@
 package Lab.component.classObjectInstance;
 
-// 자동차 클래스를 정의
+// 오버로딩 : 하나의 클래스 안에서 동일한 이름의 메서드를 매개변수의 타입, 개수, 순서를 다르게 하여 여러 개 정의할 수 있는 것
+
+// Car3 클래스 정의
 class Car3 {
     // 클래스 멤버 변수 (모든 인스턴스가 공유)
     static int totalCars = 0;
@@ -9,7 +11,7 @@ class Car3 {
     String brand;
     int speed;
 
-    // 클래스 초기화 블록: 클래스가 처음 로딩될 때 한 번 실행
+    // 클래스 초기화 블록: 클래스가 클래스 로더에 의해 처음 로딩될 때 한 번 실행
     static {
         System.out.println("자동차에 대한 정보");
     }
@@ -21,6 +23,9 @@ class Car3 {
 
     // Default 생성자 - 매개변수 없음
     Car3() {
+        this.brand = "Toyota";
+        this.speed = 120;
+        totalCars++; // 생성될 때마다 총 자동차 수 증가
     }
 
     // Parameter 생성자 - 매개변수로 브랜드와 속도를 설정
@@ -47,10 +52,10 @@ public class Lab3 {
         Car3 car1 = new Car3();  // Default 생성자 호출
         Car3 car2 = new Car3("BMW", 100);  // Parameter 생성자 호출
 
-        // 객체의 참조변수를 이용해 인스턴스 멤버 메서드 접근 - 자동차 주행 정보 출력
+        // 객체의 참조변수를 이용해 인스턴스 멤버 메서드 접근
         car2.drive();
 
-        // 클래스의 생성된 자동차의 총 개수 출력
+        // 클래스명으로 클래스 멤버 변수에 접근
         Car3.showTotalCars();
     }
 }

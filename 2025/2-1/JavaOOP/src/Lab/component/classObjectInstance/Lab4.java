@@ -21,6 +21,9 @@ class Car4 {
 
     // Default 생성자 - 매개변수 없음
     Car4() {
+        this.brand = "Toyota";
+        this.speed = 120;
+        totalCars++; // 생성될 때마다 총 자동차 수 증가
     }
 
     // Parameter 생성자 - 매개변수로 브랜드와 속도를 설정
