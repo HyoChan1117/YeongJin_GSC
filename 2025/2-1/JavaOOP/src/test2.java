@@ -16,11 +16,11 @@ class Student {
     }
 
     boolean setScore(int argKorean, int argEnglish, int argMath) {
-        if(argKorean < 0 || argEnglish < 0 || argMath < 0) {
+        if (argKorean < 0 || argEnglish < 0 || argMath < 0) {
             return false;
         }
 
-        if(argKorean > 100 || argEnglish > 100 || argMath > 100) {
+        if (argKorean > 100 || argEnglish > 100 || argMath > 100) {
             return false;
         }
 
@@ -49,16 +49,16 @@ class Student {
     }
 
     float getAvg() {
-        avg = (float)getSum() / 3;
+        avg = (float) getSum() / 3;
         return avg;
     }
 }
 
-class StdScoreMgr{
+class StdScoreMgr {
     Student[] stdList;
     int numOfStudents;
 
-    StdScoreMgr(int argNumOfStudents){
+    StdScoreMgr(int argNumOfStudents) {
         stdList = new Student[argNumOfStudents];
         numOfStudents = argNumOfStudents;
     }
@@ -87,6 +87,26 @@ class StdScoreMgr{
 
             if (student.setScore(scoreKorean, scoreEnglish, scoreMath)) {
                 stdList[i] = student;
+            } else {
+                System.out.println("점수가 유효하지 않습니다. 다시 입력하세요.");
+                i--; // 다시 반복하도록 인덱스 감소
+            }
+        }
+    }
+
+    void printAllStudents() {
+        System.out.println("\n--- 전체 학생 정보 ---");
+        for (int i = 0; i < numOfStudents; i++) {
+            Student s = stdList[i];
+            if (s != null) {
+                System.out.println("ID: " + s.id);
+                System.out.println("이름: " + s.name);
+                System.out.println("국어: " + s.getScoreKorean());
+                System.out.println("영어: " + s.getScoreEnglish());
+                System.out.println("수학: " + s.getScoreMath());
+                System.out.println("합계: " + s.getSum());
+                System.out.printf("평균: %.2f\n", s.getAvg());
+                System.out.println("---------------------");
             }
         }
     }
@@ -94,7 +114,6 @@ class StdScoreMgr{
 
 public class test2 {
     public static void main(String args[]) {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("입력 학생 수: ");
         int stdNum = sc.nextInt();
@@ -102,9 +121,23 @@ public class test2 {
         StdScoreMgr stdMgr = new StdScoreMgr(stdNum);
         stdMgr.addStudent();
 
-        // 출력하는 알고리즘
-        // 메뉴도 출력하기
+        while (true) {
+            System.out.println("\n--- 메뉴 선택 ---");
+            System.out.println("1. 전체 학생 정보 출력");
+            System.out.println("2. 종료");
+            System.out.print("번호 선택: ");
+            int choice = sc.nextInt();
 
+            if (choice == 1) {
+                stdMgr.printAllStudents();
+            } else if (choice == 2) {
+                System.out.println("프로그램을 종료합니다.");
+                break;
+            } else {
+                System.out.println("잘못된 입력입니다. 다시 선택하세요.");
+            }
+        }
+
+        sc.close();
     }
-
 }
