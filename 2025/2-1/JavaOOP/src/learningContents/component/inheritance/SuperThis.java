@@ -12,10 +12,10 @@ class A extends Object {  // Object는 객체를 생성할 때 상속받는 최�
 class B extends A {
     B (int m) {
         // super(); -> 생략됨 (컴파일러가 자동 삽입)
-        System.out.println("B 생성자 호출");
+        System.out.println("B Parameter 생성자 호출");
     }
     B () {
-
+        System.out.println("B Default 생성자 호출");
     }
 }
 
