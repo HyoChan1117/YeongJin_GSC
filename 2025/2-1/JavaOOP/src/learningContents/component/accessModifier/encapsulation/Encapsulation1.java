@@ -1,4 +1,4 @@
-package accessModifier.encapsulation;
+package learningContents.component.accessModifier.encapsulation;
 
 class Foo {
     private int score;

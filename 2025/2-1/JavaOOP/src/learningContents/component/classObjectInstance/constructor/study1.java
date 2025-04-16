@@ -1,4 +1,4 @@
-package learningContents.classComponent.constructor;
+package learningContents.component.classObjectInstance.constructor;
 
 class Foo {
 

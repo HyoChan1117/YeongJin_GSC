@@ -1,6 +1,6 @@
-package accessModifier.publicStudy.rakuten;
+package learningContents.component.accessModifier.publicStudy.rakuten;
 
-import accessModifier.publicStudy.gsc.UserInfo;
+import learningContents.component.accessModifier.publicStudy.gsc.UserInfo;
 
 public class MainTest {
     public static void main(String[] args) {

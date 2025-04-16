@@ -1,4 +1,4 @@
-package accessModifier;
+package learningContents.component.accessModifier;
 
 class A {
     public int x;

@@ -1,4 +1,4 @@
-package learningContents.classComponent.constructor;
+package learningContents.component.classObjectInstance.constructor;
 
 class Bar {
     // 멤버변수 -> 클래스 내 선언 된 변수

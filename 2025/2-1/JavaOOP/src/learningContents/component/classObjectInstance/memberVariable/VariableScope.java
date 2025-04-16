@@ -1,4 +1,4 @@
-package learningContents.classComponent.memberVariable;
+package learningContents.component.classObjectInstance.memberVariable;
 
 class Foo {
     // 1) 멤버변수

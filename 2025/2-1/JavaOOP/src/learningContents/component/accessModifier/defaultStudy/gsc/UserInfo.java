@@ -1,4 +1,4 @@
-package accessModifier.defaultStudy.gsc;
+package learningContents.component.accessModifier.defaultStudy.gsc;
 
 public class UserInfo {
 }
