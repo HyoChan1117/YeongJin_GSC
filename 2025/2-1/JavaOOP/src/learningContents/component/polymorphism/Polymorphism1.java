@@ -1,11 +1,11 @@
 package learningContents.component.polymorphism;
 
 // 공통 부모 클래스
-class Player {
+class Player1 {
     protected String name;
     protected String position;
 
-    Player(String name, String position) {
+    Player1(String name, String position) {
         this.name = name;
         this.position = position;
     }
@@ -15,8 +15,8 @@ class Player {
     }
 }
 
-class Sg extends Player {
-    Sg(String argName) {
+class Sg1 extends Player1 {
+    Sg1(String argName) {
         super(argName, "슈팅 가드");
     }
 
@@ -26,8 +26,8 @@ class Sg extends Player {
     }
 }
 
-class Pg extends Player {
-    Pg(String argName) {
+class Pg1 extends Player1 {
+    Pg1(String argName) {
         super(argName, "포인트 가드");
     }
 
@@ -37,8 +37,8 @@ class Pg extends Player {
     }
 }
 
-class Center extends Player {
-    Center(String argName) {
+class Center1 extends Player1 {
+    Center1(String argName) {
         super(argName, "센터");
     }
 
@@ -48,8 +48,8 @@ class Center extends Player {
     }
 }
 
-class Pf extends Player {
-    Pf(String argName) {
+class Pf1 extends Player1 {
+    Pf1(String argName) {
         super(argName, "파워 포워드");
     }
 
@@ -59,8 +59,8 @@ class Pf extends Player {
     }
 }
 
-class Sf extends Player {
-    Sf(String argName) {
+class Sf1 extends Player1 {
+    Sf1(String argName) {
         super(argName, "스몰 포워드");
     }
 
