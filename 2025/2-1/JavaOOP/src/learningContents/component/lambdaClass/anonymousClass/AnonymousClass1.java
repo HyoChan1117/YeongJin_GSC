@@ -1,6 +1,6 @@
+package learningContents.component.lambdaClass.anonymousClass;
 
-
-public class MainTest3 {
+public class AnonymousClass1 {
     public static void main(String[] args) {
         // 구현되어 있는 추상 메서드를 구현하는데 사용
         // 한 번 사용할 클래스를 굳이 정의할 필요가 없을 때 사용

@@ -1,3 +1,5 @@
+package learningContents.component.nestedClass.innerClass.localInnerClass;
+
 class OuterClass {
     // 외부 클래스의 인스턴스 변수
     private int outerVar = 20;  // LocalInner 클래스에서도 접근 가능
@@ -42,7 +44,7 @@ class OuterClass {
     }
 }
 
-public class MainTest {
+public class LocalInnerClass2 {
     public static void main(String[] args) {
 
 

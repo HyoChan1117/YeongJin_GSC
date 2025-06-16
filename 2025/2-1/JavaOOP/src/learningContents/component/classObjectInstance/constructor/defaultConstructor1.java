@@ -15,7 +15,7 @@ class Test1 {
     // 생성자 -> 객체 생성 시 객체의 초기값 설정
     // 멤버 변수 초기화
     // Default Constructor인 경우 생성자를 생략해도 자동으로 매개변수가 없는 생성자가 생성됨
-//    Test1 () {
+//    learningContents.component.lambdaClass.anonymousClass.Test1 () {
 //    }
 
     // 멤버 메서드 -> 클래스 내에서 정의한 메서드

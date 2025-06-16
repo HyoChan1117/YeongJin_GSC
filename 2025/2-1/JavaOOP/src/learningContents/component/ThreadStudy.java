@@ -1,3 +1,5 @@
+package learningContents.component;
+
 interface Test {
     void run() throws Exception;
 }
@@ -30,7 +32,7 @@ class Foo implements Runnable {
     }
 }
 
-public class MainTest2 {
+public class ThreadStudy {
     public static void main(String[] args) {
 
         Bar bar = new Bar();
