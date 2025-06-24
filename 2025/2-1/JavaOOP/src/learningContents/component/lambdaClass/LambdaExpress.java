@@ -1,4 +1,4 @@
-package learningContents.component.lambdaClass.anonymousClass;
+package learningContents.component.lambdaClass;
 
 // 함수형 인터페이스는 메서드가 하나인 인터페이스
 interface MathOperator {
