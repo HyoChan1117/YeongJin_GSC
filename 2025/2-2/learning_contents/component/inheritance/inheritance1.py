@@ -14,3 +14,4 @@ class Foo(Bar):
 
 obj = Foo()
 obj.prt_info()
+print(Foo.__mro__)
