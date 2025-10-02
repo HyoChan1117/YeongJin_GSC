@@ -1,6 +1,11 @@
-class User:
+class A:
     def __init__(self):
-        self.__password = "1234"
+        self._age = 20
         
-u= User()
-print(u.__dict__)
+class B(A):
+    def __init__(self):
+        super().__init__()
+        self.age = 30
+        
+obj = B()
+print(obj.__dict__)
