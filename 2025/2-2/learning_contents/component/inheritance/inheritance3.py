@@ -6,10 +6,11 @@ class A:
     def prt_something(cls):
         print("Invoked prt_something")
         
-class B:
+class B(A):
     def __init__(self):
         super().__init__()
-        self.age = 20
+        self.name = "Class B"
         
-obj = A()
-A.prt_something()
+obj = B()
+print(obj.name)
+B.prt_something()
