@@ -27,5 +27,6 @@ class D(B, C):
     def prt(self):
         print("D - prt")
     
+print(C.__mro__)
 obj = D()
 obj.prt()

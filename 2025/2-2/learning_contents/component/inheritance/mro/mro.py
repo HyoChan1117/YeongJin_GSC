@@ -11,4 +11,4 @@ class C2:
 class D(C1, C2):
     pass
 
-print(B2.__mro__)
+print(D.__mro__)

@@ -13,4 +13,4 @@ class D(A):
 class E(B, C, D):
     pass
 
-print(E.mro)
+print(E.__mro__)
